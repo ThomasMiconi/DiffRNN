@@ -1,8 +1,10 @@
 Recurrent neural networks with differentiable structure. The number of neurons in the network undergoes and gradient descent, just like the weights of the network. Source code for an upcoming paper (more information soon).
 
-`rnn.py` is the main program. You can simply run it as is. It will generate an
+`rnn.py` is the main program. Be sure to modify the path of the input files before running it. It will generate an
 output file called `test.txt`, updated every 1000 cycles, which contains the
-current loss, number of neurons, sum of multipliers, etc. (see code) Other
+current loss, number of neurons, sum of multipliers, etc. (see code).
+
+Other
 python files generate inputs or figures, or submit jobs to a cluster.
 
 
