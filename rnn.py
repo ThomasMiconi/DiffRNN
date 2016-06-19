@@ -48,9 +48,9 @@ np.random.seed(g['RNGSEED'])
 myf = open("test.txt", "w")
 myf.close()
 if (g['EXPTYPE'] == 'EASY') | (g['EXPTYPE'] == 'EASYHARDEASY'):
-    data = open('../../inputeasy.txt', 'r').read() # should be simple plain text file
+    data = open('./inputeasy.txt', 'r').read() # should be simple plain text file
 else:
-    data = open('../../inputhard.txt', 'r').read() # should be simple plain text file
+    data = open('./inputhard.txt', 'r').read() # should be simple plain text file
 chars = list(set(data))
 data_size, vocab_size = len(data), len(chars)
 print 'data has', data_size, 'characters,', vocab_size, 'unique.'# % (data_size, vocab_size)
@@ -165,7 +165,7 @@ while True:
       print 'iter %d, position in data %d, loss: %f , nb hidden neurons %d, sum-abs multips: %f' % (n, p, smooth_loss, hidden_size, sum(abs(multips))), # print progress
       print multips.T
   if n % 1000 == 0: 
-      with open("test.txt", "a") as myf:
+      with open("output.txt", "a") as myf:
         msg = "%d %d %f  %d %f" % (n, p, smooth_loss, hidden_size, sum(abs(multips))) # print progress
         myf.write(msg+"\n")
  
@@ -248,13 +248,13 @@ while True:
   p += seq_length # move data pointer
   n += 1 # iteration counter 
   if (n == 100000) & (g['EXPTYPE'] == 'EASYHARDEASY'):
-      data = open('../../inputhard.txt', 'r').read() # should be simple plain text file
+      data = open('./inputhard.txt', 'r').read() # should be simple plain text file
       p = 0
   if (n == 100000) & (g['EXPTYPE'] == 'HARDEASY'):
-      data = open('../../inputeasy.txt', 'r').read() # should be simple plain text file
+      data = open('./inputeasy.txt', 'r').read() # should be simple plain text file
       p = 0
   if (n == 200000) & (g['EXPTYPE'] == 'EASYHARDEASY'):
-      data = open('../../inputeasy.txt', 'r').read() # should be simple plain text file
+      data = open('./inputeasy.txt', 'r').read() # should be simple plain text file
       p = 0
   if n > g['NBSTEPS']:
       sys.exit(0)
