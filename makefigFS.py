@@ -14,7 +14,7 @@ np.set_printoptions(precision=3, suppress=True)
 #dirz = glob.glob('trial-new-hardeasy*')
 #dirz = glob.glob('trial-easyhardeasy*')
 dirz = glob.glob('trial-fixedsize*')
-dirz2 = glob.glob('trial-ref*-HARD-*')
+dirz2 = glob.glob('trial-ref-*-HARD-*')
 
 dirz = dirz + dirz2
 dirz.sort()
@@ -28,13 +28,12 @@ nplot = 1
 thards= []
 teasys=[]
 colorz=['b', 'r', 'g', 'm', 'c', 'orange']
-labelz=['10 neurons', '100 neurons', '27 neurons', '50 neurons', 'Variable Size']
+labelz=['10 neurons', '100 neurons', '27 neurons', '30 neurons', '50 neurons', 'Variable Size']
 for (num, droot) in enumerate(dirz):
     t = []
     for v in range(20):
         dfull = droot + "/v" + str(v)
-        #t.append(np.loadtxt(dfull+"/test.txt")[:200, :])
-        t.append(np.loadtxt(dfull+"/test.txt"))
+        t.append(np.loadtxt(dfull+"/output.txt")[:200, :])
     t = np.dstack(t)
     tmean = np.mean(t, axis=2)
     tstd = np.std(t, axis=2)

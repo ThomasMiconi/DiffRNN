@@ -31,7 +31,7 @@ for (num, droot) in enumerate(dirz):
     for v in range(20):
         dfull = droot + "/v" + str(v)
         #t.append(np.loadtxt(dfull+"/test.txt")[:200,:])
-        t.append(np.loadtxt(dfull+"/test.txt"))
+        t.append(np.loadtxt(dfull+"/output.txt"))
     t = np.dstack(t)
     tmean = np.mean(t, axis=2)
     tstd = np.std(t, axis=2)

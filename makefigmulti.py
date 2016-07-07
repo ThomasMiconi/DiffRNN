@@ -12,7 +12,8 @@ np.set_printoptions(precision=3, suppress=True)
 
 #dirz = glob.glob('trial-max10*')
 #dirz = glob.glob('trial-new-hardeasy*')
-dirz = glob.glob('trial-easyhardeasy*')
+#dirz = glob.glob('trial-EHE*MULTIPGRAD-1*')
+dirz = glob.glob('trial-EHE*900000*')
 #dirz = glob.glob('trial-fixedsize*')
 #dirz = glob.glob('trial-ref*EASYHARDEASY*')
 dirz.sort()
@@ -22,14 +23,15 @@ SS = np.ceil(np.sqrt(NBPLOTS))
 plt.figure(1,  figsize=(4, 3), dpi=100, facecolor='w', edgecolor='k')
 
 nplot = 1
-thards= []
-teasys=[]
+perfs = []
+nbneurs = []
+dirs = []
 colorz=['b', 'b', 'b', 'r', 'g']
 for (num, droot) in enumerate(dirz):
     t = []
     for v in range(10):
         dfull = droot + "/v" + str(v)
-        t.append(np.loadtxt(dfull+"/test.txt"))
+        t.append(np.loadtxt(dfull+"/output.txt"))
     t = np.dstack(t)
     tmean = np.mean(t, axis=2)
     tstd = np.std(t, axis=2)
@@ -44,13 +46,26 @@ for (num, droot) in enumerate(dirz):
         plt.plot(tmedian[:, vari], color=colorz[vari])
     plt.axis([0, tmean.shape[0], 0, 50])
 
-    print num, tmean[90, :], tmean[190, :], tmean[-1, :], droot
-    thards.append(tmean[90,:])
-    teasys.append(tmean[-1,:])
+    p1 = int(tmean.shape[0] / 3)
+    p2 = 2*int(tmean.shape[0] / 3)
+    p3 = -1
+
+    print num, tmean[p1, :], tmean[p2, :], tmean[p3, :], droot
+    perfs.append([tmean[p1,2], tmean[p2, 2], tmean[p3, 2]])
+    nbneurs.append([tmean[p1,3], tmean[p2, 3], tmean[p3, 3]])
+    dirs.append(droot)
 
     nplot += 1
 
 print "Data read."
+
+perfs = np.array(perfs)
+p = perfs[:,1]
+nbneurs = np.array(nbneurs)
+dneur = nbneurs[:, 1] - nbneurs[:,2]
+ord = np.argsort(p)
+data = np.vstack((ord, dneur[ord], p[ord])).T
+
 
 plt.show()
 

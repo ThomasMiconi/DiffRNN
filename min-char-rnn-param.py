@@ -21,7 +21,7 @@ for argpair in argpairs:
 print g
 
 # data I/O
-myf = open("test.txt", "w")
+myf = open("output.txt", "w")
 myf.close()
 data = open('../../inputhard.txt', 'r').read() # should be simple plain text file
 chars = list(set(data))
@@ -120,7 +120,7 @@ while True:
   if n % 100 == 0: print 'iter %d, loss: %f' % (n, smooth_loss) # print progress
   
   if n % 1000 == 0: 
-      with open("test.txt", "a") as myf:
+      with open("output.txt", "a") as myf:
         msg = "%d %d %f  %d " % (n, p, smooth_loss, hidden_size) # print progress
         myf.write(msg+"\n")
   

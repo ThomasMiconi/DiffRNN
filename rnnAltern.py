@@ -1,8 +1,13 @@
 """
 Differentiable-structure RNN, by Thomas Miconi.
 
-Mostly based on minimal character-level Vanilla RNN model by Andrej Karpathy
-(@karpathy): https://gist.github.com/karpathy/d4dee566867f8291f086
+This is an alternative version in which the multipliers apply directly to the
+output of each hidden neuron, and thus also affect the recurrent connections.
+It also works, but produces noticeably lower performance.
+
+Largely based on minimal character-level Vanilla RNN model by Andrej Karpathy (@karpathy): https://gist.github.com/karpathy/d4dee566867f8291f086
+
+REMINDER: if you modify something in the forward pass, remember to modify it also in the sampling function!
 
 BSD License
 
@@ -13,12 +18,13 @@ import sys
 
 # Global meta-parameters, modifiable by command line
 g = {
-'DIR' : '.',
+'DIR': '../..',
 'NBSTEPS' : 300000,
-'COEFFMULTIPNORM' : 3e-5,
-'EXPTYPE' : 'HARD',
+'COEFFMULTIPGRAD' : 1.0, 
+'COEFFMULTIPNORM' : 3e-5, 
+'EXPTYPE' : 'EASYHARDEASY',
 'DELETIONTHRESHOLD': .05,
-'MINMULTIP': .025,  # Must be lower than DELETIONTHRESHOLD !
+'MINMULTIP':.025,  # Must be lower than DELETIONTHRESHOLD !
 'NBMARGIN' : 1,
 'PROBADEL': .25,
 'PROBAADD': .05,
@@ -31,7 +37,7 @@ argpairs = [sys.argv[i:i+2] for i in range(1, len(sys.argv), 2)]
 for argpair in argpairs:
     if not (argpair[0] in g):
         sys.exit("Error, tried to pass value of non-existent parameter "+argpair[0])
-    if argpair[0] == 'EXPTYPE':
+    if (argpair[0] == 'EXPTYPE') or (argpair[0] == 'DIR'):
         g[argpair[0]] = argpair[1]
     else:
         g[argpair[0]] = float(argpair[1])
@@ -46,12 +52,14 @@ np.random.seed(g['RNGSEED'])
 
 
 # data I/O
-myf = open("output.txt", "w")
+# NOTE: the input files are specified two directories up because I generally use the program with a different working directory. Modify as needed.
+myf = open("test.txt", "w")
 myf.close()
 if (g['EXPTYPE'] == 'EASY') | (g['EXPTYPE'] == 'EASYHARDEASY'):
-    data = open(g['DIR'] + '/inputeasy.txt', 'r').read() # should be simple plain text file
+    data = open(g['DIR']+'/inputeasy.txt', 'r').read() # should be simple plain text file
 else:
-    data = open(g['DIR'] + '/inputhard.txt', 'r').read() # should be simple plain text file
+    #data = open('./inputhard.txt', 'r').read() # should be simple plain text file
+    data = open(g['DIR']+'/inputhard.txt', 'r').read() # should be simple plain text file
 chars = list(set(data))
 data_size, vocab_size = len(data), len(chars)
 print 'data has', data_size, 'characters,', vocab_size, 'unique.'# % (data_size, vocab_size)
@@ -60,7 +68,7 @@ ix_to_char = { i:ch for i,ch in enumerate(chars) }
 
 # hyperparameters
 MAX_HIDDEN_SIZE = 100 # Maximum size of hidden layer of neurons (same as fixed size in original min-char-rnn.py)
-hidden_size = 1 # size of hidden layer of neurons - start from 1 node.
+hidden_size = 1 # 1 # size of hidden layer of neurons - start from 1 node.
 seq_length = 40 # number of steps to unroll the RNN for 
 learning_rate = 1e-1
 
@@ -68,29 +76,30 @@ learning_rate = 1e-1
 Wxh = np.random.randn(hidden_size, vocab_size)*0.01 # input to hidden
 Whh = np.random.randn(hidden_size, hidden_size)*0.01 # hidden to hidden
 multips = .001 * np.ones((hidden_size, 1)); # multipliers 
-multips.fill(1.0) # Start with a multiplier of 1 on the single starting node.
+multips.fill(1.0)  # Start with a multiplier of 1 on the single starting node.
+
 Wiy = np.random.randn(vocab_size, hidden_size)*0.01 # hidden (after multiplier) to output. See below
 bh = np.zeros((hidden_size, 1)) # hidden bias
 by = np.zeros((vocab_size, 1)) # output bias
 
 ages = np.zeros(hidden_size) # Ages of all neurons. Not used at present.
 
-def lossFun(inputs, targets, hprev):
+def lossFun(inputs, targets, postmultipprev):
   """
   inputs,targets are both list of integers.
   hprev is Hx1 array of initial hidden state
   returns the loss, gradients on model parameters, and last hidden state
   """
   xs, hs, postmultips, ys, ps = {}, {}, {}, {}, {}
-  hs[-1] = np.copy(hprev)
+  postmultips[-1] = np.copy(postmultipprev)
   loss = 0
   # forward pass
   for t in xrange(len(inputs)):
     xs[t] = np.zeros((vocab_size,1)) # encode in 1-of-k representation
     xs[t][inputs[t]] = 1
 
-    hs[t] = np.tanh(np.dot(Wxh, xs[t]) + np.dot(Whh, hs[t-1]) + bh) # hidden state
-    postmultips[t] = multips * hs[t]  # "postmultip" is the output of the hidden layer after the multipliers, which is to be fed into y (through the Wiy weight matrix)
+    hs[t] = np.tanh(np.dot(Wxh, xs[t]) + np.dot(Whh, postmultips[t-1]) + bh) # hidden state
+    postmultips[t] = multips * hs[t]  # "postmultip" is the output of the hidden layer after the multipliers, which is to be fed "into" y (through the Wiy weight matrix)
     ys[t] = np.dot(Wiy, postmultips[t]) + by # unnormalized log probabilities for next chars
     ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t])) # probabilities for next chars
     loss += -np.log(ps[t][targets[t],0]) # softmax (cross-entropy loss)
@@ -98,28 +107,28 @@ def lossFun(inputs, targets, hprev):
   # backward pass: compute gradients going backwards
   dWxh, dWhh, dmultips, dWiy = np.zeros_like(Wxh), np.zeros_like(Whh), np.zeros_like(multips), np.zeros_like(Wiy)
   dbh, dby = np.zeros_like(bh), np.zeros_like(by)
-  dhnext = np.zeros_like(hs[0])
+  dpostmultipnext = np.zeros_like(postmultips[0])
   for t in reversed(xrange(len(inputs))):
     dy = np.copy(ps[t])
     dy[targets[t]] -= 1 # backprop into y. see http://cs231n.github.io/neural-networks-case-study/#grad if confused here
     dWiy += np.dot(dy, postmultips[t].T) 
     dby += dy
-    dpostmultip = np.dot(Wiy.T, dy) # dE/dIntoY, as a function of dE/dy
+    dpostmultip = np.dot(Wiy.T, dy) + dpostmultipnext # dE/dIntoY, as a function of dE/dy
     
     # Gradient to be applied to the multipliers
-    dmultips += (1.0 * dpostmultip * hs[t]  # This part descends the error gradient
-            + g['COEFFMULTIPNORM'] * np.sign(multips)) # L1-norm regularization. The derivative of abs(x) is sign(x) (though in practice multipliers are always positive due to clipping at non-zero positive value). 
+    dmultips += (g['COEFFMULTIPGRAD'] * dpostmultip * hs[t] # This part descends the error gradient
+            + g['COEFFMULTIPNORM'] * np.sign(multips)) # L1-norm regularization. The derivative of abs(x) is sign(x). 
             # + .001 * multips) # This would add an L2-regularization term, which we don't use here.
-    
-    dh = dpostmultip * multips + dhnext
+
+    dh = dpostmultip * multips 
     dhraw = (1 - hs[t] * hs[t]) * dh # backprop through tanh nonlinearity
     dbh += dhraw
     dWxh += np.dot(dhraw, xs[t].T)
-    dWhh += np.dot(dhraw, hs[t-1].T)
-    dhnext = np.dot(Whh.T, dhraw)
+    dWhh += np.dot(dhraw, postmultips[t-1].T)
+    dpostmultipnext = np.dot(Whh.T, dhraw)
   for dparam in [dWxh, dWhh, dmultips, dWiy, dbh, dby]:
     np.clip(dparam, -5, 5, out=dparam) # clip to mitigate exploding gradients
-  return loss, dWxh, dWhh, dmultips, dWiy, dbh, dby, hs[len(inputs)-1]
+  return loss, dWxh, dWhh, dmultips, dWiy, dbh, dby, postmultips[len(inputs)-1]
 
 def sample(h, seed_ix, n):
   """ 
@@ -130,7 +139,7 @@ def sample(h, seed_ix, n):
   x[seed_ix] = 1
   ixes = []
   for t in xrange(n):
-    h = np.tanh(np.dot(Wxh, x) + np.dot(Whh, h) + bh)
+    h = np.tanh(np.dot(Wxh, x) + np.dot(Whh, multips*h) + bh)
     y = np.dot(Wiy, multips * h) + by
     p = np.exp(y) / np.sum(np.exp(y))
     ix = np.random.choice(range(vocab_size), p=p.ravel())
@@ -148,19 +157,19 @@ smooth_loss = -np.log(1.0/vocab_size)*seq_length # loss at iteration 0
 while True:
   # prepare inputs (we're sweeping from left to right in steps seq_length long)
   if p+seq_length+1 >= len(data) or n == 0: 
-    hprev = np.zeros((hidden_size,1)) # reset RNN memory
+    postmultipprev = np.zeros((hidden_size,1)) # reset RNN memory
     p = 0 # go from start of data
   inputs = [char_to_ix[ch] for ch in data[p:p+seq_length]]
   targets = [char_to_ix[ch] for ch in data[p+1:p+seq_length+1]]
 
   # sample from the model now and then
   if n % 100 == 0:
-    sample_ix = sample(hprev, inputs[0], 200)
+    sample_ix = sample(postmultipprev, inputs[0], 200)
     txt = ''.join(ix_to_char[ix] for ix in sample_ix)
     print '----\n %s \n----' % (txt, )
 
   # forward seq_length characters through the net and fetch gradient
-  loss, dWxh, dWhh, dmultips, dWiy, dbh, dby, hprev = lossFun(inputs, targets, hprev)
+  loss, dWxh, dWhh, dmultips, dWiy, dbh, dby, postmultipprev = lossFun(inputs, targets, postmultipprev)
   smooth_loss = smooth_loss * 0.999 + loss * 0.001
   if n % 100 == 0: 
       print 'iter %d, position in data %d, loss: %f , nb hidden neurons %d, sum-abs multips: %f' % (n, p, smooth_loss, hidden_size, sum(abs(multips))), # print progress
@@ -187,7 +196,9 @@ while True:
 
   multips[multips < g['MINMULTIP']] = g['MINMULTIP']  # multipliers are clipped from below
   
+  #"""
 
+  # Addition and deletion of neurons
   # Which neurons are above threshold ('selected' for preservation) ?
   sel = (abs(multips) > g['DELETIONTHRESHOLD'])[:,0] # | (ages < 500)
   
@@ -212,7 +223,7 @@ while True:
     multips = multips[sel]
     Wiy = Wiy[:, sel]
     bh = bh[sel]
-    hprev = hprev[sel]
+    postmultipprev = postmultipprev[sel]
     ages = ages[sel]
     
     mWxh = mWxh[sel, :]
@@ -230,7 +241,7 @@ while True:
           Wxh = np.append(Wxh, np.random.randn(1, vocab_size)*0.01, axis=0)
           Wiy = np.append(Wiy, np.random.randn(vocab_size,1)*0.01, axis=1)
           bh = np.append(bh, np.zeros((1,1)), axis=0)
-          hprev = np.append(hprev, np.zeros((1,1)), axis=0)
+          postmultipprev = np.append(postmultipprev, np.zeros((1,1)), axis=0)
           multips = np.append(multips,  g['DELETIONTHRESHOLD'] * np.ones((1,1)), axis=0)  # Initial multiplier for new neurons is set to deletion threshold
           ages = np.append(ages, 0)
 
@@ -244,20 +255,19 @@ while True:
           hidden_size += 1
           print "Adding Neuron"
 
-
+  #"""
 
   p += seq_length # move data pointer
   n += 1 # iteration counter 
   if (n == int(g['NBSTEPS'] / 3)) & (g['EXPTYPE'] == 'EASYHARDEASY'):
-      data = open(g['DIR'] + '/inputhard.txt', 'r').read() # should be simple plain text file
+      data = open(g['DIR']+'/inputhard.txt', 'r').read() # should be simple plain text file
       p = 0
-  if (n == int(g['NBSTEPS'] / 2)) & (g['EXPTYPE'] == 'HARDEASY'):
-      data = open(g['DIR'] + '/inputeasy.txt', 'r').read() # should be simple plain text file
+  if (n == int(g['NBSTEPS'] / 3)) & (g['EXPTYPE'] == 'HARDEASY'):
+      data = open(g['DIR']+'/inputeasy.txt', 'r').read() # should be simple plain text file
       p = 0
-  if (n == int(2 * g['NBSTEPS'] / 3)) & (g['EXPTYPE'] == 'EASYHARDEASY'):
-      data = open(g['DIR'] + '/inputeasy.txt', 'r').read() # should be simple plain text file
+  if (n == 2 * int(g['NBSTEPS'] / 3)) & (g['EXPTYPE'] == 'EASYHARDEASY'):
+      data = open(g['DIR']+'/inputeasy.txt', 'r').read() # should be simple plain text file
       p = 0
   if n > g['NBSTEPS']:
-      print "Done!"
       sys.exit(0)
 

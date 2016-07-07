@@ -1,0 +1,10 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Method}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Description of the algorithm}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Implementation details}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Experiments}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Tasks}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{Results}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Performance and network size in hard and easy tasks}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Dynamical adjustment of network size in response to changing conditions}{section.4}% 9
+\BOOKMARK [1][-]{section.5}{Conclusions and future work}{}% 10
