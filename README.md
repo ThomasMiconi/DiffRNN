@@ -13,5 +13,10 @@ cycle number, position in the input file, loss, number of neurons, and total abs
 Other
 python files in the repository generate inputs or figures, or submit jobs to a cluster.
 
+rnnAltern.py uses a different version of the algorithm, in which the
+multipliers are applied directly to the output of hidden neurons (and thus
+affect both feedforward and lateral/recurrent outputs). This wlao works, but
+produces somewhat lower performance.
+
 
 
