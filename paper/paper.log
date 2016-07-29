@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.19)  6 JUL 2016 20:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.19)  29 JUL 2016 18:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**paper
+**paper.tex
 (./paper.tex
 LaTeX2e <2015/01/01> patch level 2
 Babel <3.9m> and hyphenation patterns for 79 languages loaded.
@@ -853,61 +853,51 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 38.
  [1
 
-{/opt/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-<figE.png, id=70, 218.2554pt x 145.9854pt>
+{/opt/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<figE.png, id=73, 218.2554pt x 145.9854pt>
 File: figE.png Graphic file (type png)
  <use figE.png>
-Package pdftex.def Info: figE.png used on input line 237.
+Package pdftex.def Info: figE.png used on input line 219.
 (pdftex.def)             Requested size: 196.42802pt x 131.38564pt.
 
-<figH.png, id=72, 216.0873pt x 143.8173pt>
+<figH.png, id=75, 216.0873pt x 143.8173pt>
 File: figH.png Graphic file (type png)
  <use figH.png>
-Package pdftex.def Info: figH.png used on input line 238.
+Package pdftex.def Info: figH.png used on input line 220.
 (pdftex.def)             Requested size: 194.47676pt x 129.43436pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-<figFS.png, id=83, 290.5254pt x 182.1204pt>
+ [3 <./figE.png> <./figH.png>] <figFS.png, id=87, 290.5254pt x 182.1204pt>
 File: figFS.png Graphic file (type png)
  <use figFS.png>
-Package pdftex.def Info: figFS.png used on input line 293.
+Package pdftex.def Info: figFS.png used on input line 269.
 (pdftex.def)             Requested size: 261.47044pt x 163.90683pt.
 
-<figEHE.png, id=88, 290.5254pt x 182.1204pt>
+<figEHE.png, id=92, 290.5254pt x 182.1204pt>
 File: figEHE.png Graphic file (type png)
  <use figEHE.png>
-Package pdftex.def Info: figEHE.png used on input line 308.
+Package pdftex.def Info: figEHE.png used on input line 283.
 (pdftex.def)             Requested size: 261.47044pt x 163.90683pt.
-
-Underfull \vbox (badness 3907) has occurred while \output is active []
-
- [4 <./figE.png> <./figH.png>] [5 <./figFS.png> <./figEHE.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 363.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 363.
+ [4 <./figFS.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
+[5 <./figEHE.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
  (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 363.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 363.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 321.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: 638E334B7E6847A7A472EA35A0BE99D0;661.
 Package logreq Info: Writing requests to 'paper.run.xml'.
 \openout1 = `paper.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 363.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 321.
  ) 
 Here is how much of TeX's memory you used:
- 12775 strings out of 493091
- 203250 string characters out of 6137640
- 424856 words of memory out of 5000000
+ 12769 strings out of 493091
+ 203186 string characters out of 6137640
+ 423856 words of memory out of 5000000
  15910 multiletter control sequences out of 15000+600000
- 45188 words of font info for 158 fonts, out of 8000000 for 9000
+ 44972 words of font info for 156 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,8n,48p,933b,972s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,8n,48p,937b,972s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/opt/texlive/2015/
 texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</opt/texlive/2015/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/texlive/2015/texmf-dist/font
@@ -919,10 +909,10 @@ m/cmsy10.pfb></opt/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7
 pt/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/texlive/2015/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></opt/texlive/2015/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (6 pages, 205363 bytes).
+Output written on paper.pdf (5 pages, 200854 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
  24677 words of extra memory for PDF output out of 24883 (max. 10000000)
 
