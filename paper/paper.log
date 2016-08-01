@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.19)  29 JUL 2016 18:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.19)  29 JUL 2016 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,63 +6,117 @@ entering extended mode
 (./paper.tex
 LaTeX2e <2015/01/01> patch level 2
 Babel <3.9m> and hyphenation patterns for 79 languages loaded.
-(/opt/texlive/2015/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/opt/texlive/2015/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
-)
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
-) (./nips_2016.sty
-Package: nips_2016 2016/03/07 NIPS 2016 submission/camera-ready style file
+(./IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpdimenC=\dimen104
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
 
-(/opt/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
+(/opt/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen105
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen106
+\CLASSINFOnormalsizeunitybaselineskip=\dimen107
+\IEEEnormaljot=\dimen108
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-(/opt/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
-)
-(/opt/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-(/opt/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-(/opt/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count87
-\Gm@cntv=\count88
-\c@Gm@tempcnt=\count89
-\Gm@bindingoffset=\dimen103
-\Gm@wd@mp=\dimen104
-\Gm@odd@mp=\dimen105
-\Gm@even@mp=\dimen106
-\Gm@layoutwidth=\dimen107
-\Gm@layoutheight=\dimen108
-\Gm@layouthoffset=\dimen109
-\Gm@layoutvoffset=\dimen110
-\Gm@dimlist=\toks15
-)
-\@nipsabovecaptionskip=\skip43
-\@nipsbelowcaptionskip=\skip44
-)
-(/opt/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
+\IEEEiedtopsep=\skip41
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEsubeqnnumrollback=\count91
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count92
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\IEEEPARstartletwidth=\dimen125
+\c@IEEEbiography=\count93
+\@IEEEtranrubishbin=\box27
+) (/opt/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
 
 (/opt/texlive/2015/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
@@ -282,6 +336,11 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 (/opt/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 105.
+
+(/opt/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ))
 (/opt/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -297,9 +356,11 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
-Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -329,22 +390,29 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
+(/opt/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/opt/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
 (/opt/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
 (/opt/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen111
-\Hy@linkcounter=\count90
-\Hy@pagecounter=\count91
+\@linkdim=\dimen126
+\Hy@linkcounter=\count94
+\Hy@pagecounter=\count95
 
 (/opt/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count92
+\Hy@SavedSpaceFactor=\count96
 
 (/opt/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -356,17 +424,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count93
+\c@Hy@tempcnt=\count97
 
 (/opt/texlive/2015/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen112
-\Fld@menulength=\count94
-\Field@Width=\dimen113
-\Fld@charsize=\dimen114
+\XeTeXLinkMargin=\dimen127
+\Fld@menulength=\count98
+\Field@Width=\dimen128
+\Fld@charsize=\dimen129
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -376,44 +444,44 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count95
-\c@Item=\count96
-\c@Hfootnote=\count97
+\Hy@abspage=\count99
+\c@Item=\count100
+\c@Hfootnote=\count101
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/opt/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count98
-\c@bookmark@seq@number=\count99
+\Fld@listcount=\count102
+\c@bookmark@seq@number=\count103
 
 (/opt/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip45
+\Hy@SectionHShift=\skip44
 )
 (/opt/texlive/2015/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen115
-\lightrulewidth=\dimen116
-\cmidrulewidth=\dimen117
-\belowrulesep=\dimen118
-\belowbottomsep=\dimen119
-\aboverulesep=\dimen120
-\abovetopsep=\dimen121
-\cmidrulesep=\dimen122
-\cmidrulekern=\dimen123
-\defaultaddspace=\dimen124
-\@cmidla=\count100
-\@cmidlb=\count101
-\@aboverulesep=\dimen125
-\@belowrulesep=\dimen126
-\@thisruleclass=\count102
-\@lastruleclass=\count103
-\@thisrulewidth=\dimen127
+\heavyrulewidth=\dimen130
+\lightrulewidth=\dimen131
+\cmidrulewidth=\dimen132
+\belowrulesep=\dimen133
+\belowbottomsep=\dimen134
+\aboverulesep=\dimen135
+\abovetopsep=\dimen136
+\cmidrulesep=\dimen137
+\cmidrulekern=\dimen138
+\defaultaddspace=\dimen139
+\@cmidla=\count104
+\@cmidlb=\count105
+\@aboverulesep=\dimen140
+\@belowrulesep=\dimen141
+\@thisruleclass=\count106
+\@lastruleclass=\count107
+\@thisrulewidth=\dimen142
 )
 (/opt/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -425,9 +493,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 (/opt/texlive/2015/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip46
-\L@UnitsRaiseTextstyle=\skip47
-\L@UnitsRaiseScriptstyle=\skip48
+\L@UnitsRaiseDisplaystyle=\skip45
+\L@UnitsRaiseTextstyle=\skip46
+\L@UnitsRaiseScriptstyle=\skip47
 
 (/opt/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -435,18 +503,18 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 (/opt/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks19
-\MT@count=\count104
+\MT@count=\count108
 LaTeX Info: Redefining \textls on input line 766.
-\MT@outer@kern=\dimen128
+\MT@outer@kern=\dimen143
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count105
+\MT@listname@count=\count109
 
 (/opt/texlive/2015/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 915.
 LaTeX Info: Redefining \lslig on input line 915.
-\MT@outer@space=\skip49
+\MT@outer@space=\skip48
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -469,10 +537,10 @@ Package graphics Info: Driver file: pdftex.def on input line 94.
 
 (/opt/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count106
+\Gread@gobject=\count110
 ))
-\Gin@req@height=\dimen129
-\Gin@req@width=\dimen130
+\Gin@req@height=\dimen144
+\Gin@req@width=\dimen145
 )
 (/opt/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2015/04/19 v3.0 programmable bibliographies (PK/JW/AB)
@@ -483,130 +551,130 @@ AB)
 
 (/opt/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count107
+\etb@tempcnta=\count111
 )
 (/opt/texlive/2015/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count108
+\lrq@indent=\count112
 
 (/opt/texlive/2015/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count109
-\c@listtotal=\count110
-\c@listcount=\count111
-\c@liststart=\count112
-\c@liststop=\count113
-\c@citecount=\count114
-\c@citetotal=\count115
-\c@multicitecount=\count116
-\c@multicitetotal=\count117
-\c@instcount=\count118
-\c@maxnames=\count119
-\c@minnames=\count120
-\c@maxitems=\count121
-\c@minitems=\count122
-\c@citecounter=\count123
-\c@savedcitecounter=\count124
-\c@uniquelist=\count125
-\c@uniquename=\count126
-\c@refsection=\count127
-\c@refsegment=\count128
-\c@maxextrayear=\count129
-\c@maxextraalpha=\count130
-\c@abbrvpenalty=\count131
-\c@highnamepenalty=\count132
-\c@lownamepenalty=\count133
-\c@maxparens=\count134
-\c@parenlevel=\count135
-\blx@tempcnta=\count136
-\blx@tempcntb=\count137
-\blx@tempcntc=\count138
-\blx@maxsection=\count139
-\blx@maxsegment=\count140
-\blx@notetype=\count141
-\blx@parenlevel@text=\count142
-\blx@parenlevel@foot=\count143
-\labelnumberwidth=\skip50
-\labelalphawidth=\skip51
-\shorthandwidth=\skip52
-\biblabelsep=\skip53
-\bibitemsep=\skip54
-\bibnamesep=\skip55
-\bibinitsep=\skip56
-\bibparsep=\skip57
-\bibhang=\skip58
+\c@tabx@nest=\count113
+\c@listtotal=\count114
+\c@listcount=\count115
+\c@liststart=\count116
+\c@liststop=\count117
+\c@citecount=\count118
+\c@citetotal=\count119
+\c@multicitecount=\count120
+\c@multicitetotal=\count121
+\c@instcount=\count122
+\c@maxnames=\count123
+\c@minnames=\count124
+\c@maxitems=\count125
+\c@minitems=\count126
+\c@citecounter=\count127
+\c@savedcitecounter=\count128
+\c@uniquelist=\count129
+\c@uniquename=\count130
+\c@refsection=\count131
+\c@refsegment=\count132
+\c@maxextrayear=\count133
+\c@maxextraalpha=\count134
+\c@abbrvpenalty=\count135
+\c@highnamepenalty=\count136
+\c@lownamepenalty=\count137
+\c@maxparens=\count138
+\c@parenlevel=\count139
+\blx@tempcnta=\count140
+\blx@tempcntb=\count141
+\blx@tempcntc=\count142
+\blx@maxsection=\count143
+\blx@maxsegment=\count144
+\blx@notetype=\count145
+\blx@parenlevel@text=\count146
+\blx@parenlevel@foot=\count147
+\labelnumberwidth=\skip49
+\labelalphawidth=\skip50
+\shorthandwidth=\skip51
+\biblabelsep=\skip52
+\bibitemsep=\skip53
+\bibnamesep=\skip54
+\bibinitsep=\skip55
+\bibparsep=\skip56
+\bibhang=\skip57
 \blx@auxin=\read1
 \blx@auxout=\write3
-\c@mincomprange=\count144
-\c@maxcomprange=\count145
-\c@mincompwidth=\count146
-\c@labelname=\count147
-\c@savedlabelname=\count148
-\c@author=\count149
-\c@savedauthor=\count150
-\c@shortauthor=\count151
-\c@savedshortauthor=\count152
-\c@editor=\count153
-\c@savededitor=\count154
-\c@editora=\count155
-\c@savededitora=\count156
-\c@editorb=\count157
-\c@savededitorb=\count158
-\c@editorc=\count159
-\c@savededitorc=\count160
-\c@shorteditor=\count161
-\c@savedshorteditor=\count162
-\c@bookauthor=\count163
-\c@savedbookauthor=\count164
-\c@translator=\count165
-\c@savedtranslator=\count166
-\c@annotator=\count167
-\c@savedannotator=\count168
-\c@commentator=\count169
-\c@savedcommentator=\count170
-\c@introduction=\count171
-\c@savedintroduction=\count172
-\c@foreword=\count173
-\c@savedforeword=\count174
-\c@afterword=\count175
-\c@savedafterword=\count176
-\c@holder=\count177
-\c@savedholder=\count178
-\c@namea=\count179
-\c@savednamea=\count180
-\c@nameb=\count181
-\c@savednameb=\count182
-\c@namec=\count183
-\c@savednamec=\count184
-\c@institution=\count185
-\c@savedinstitution=\count186
-\c@language=\count187
-\c@savedlanguage=\count188
-\c@location=\count189
-\c@savedlocation=\count190
-\c@organization=\count191
-\c@savedorganization=\count192
-\c@origlocation=\count193
-\c@savedoriglocation=\count194
-\c@origpublisher=\count195
-\c@savedorigpublisher=\count196
-\c@pageref=\count197
-\c@savedpageref=\count198
-\c@publisher=\count199
-\c@savedpublisher=\count200
-\c@lista=\count201
-\c@savedlista=\count202
-\c@listb=\count203
-\c@savedlistb=\count204
-\c@listc=\count205
-\c@savedlistc=\count206
-\c@listd=\count207
-\c@savedlistd=\count208
-\c@liste=\count209
-\c@savedliste=\count210
-\c@listf=\count211
-\c@savedlistf=\count212
+\c@mincomprange=\count148
+\c@maxcomprange=\count149
+\c@mincompwidth=\count150
+\c@labelname=\count151
+\c@savedlabelname=\count152
+\c@author=\count153
+\c@savedauthor=\count154
+\c@shortauthor=\count155
+\c@savedshortauthor=\count156
+\c@editor=\count157
+\c@savededitor=\count158
+\c@editora=\count159
+\c@savededitora=\count160
+\c@editorb=\count161
+\c@savededitorb=\count162
+\c@editorc=\count163
+\c@savededitorc=\count164
+\c@shorteditor=\count165
+\c@savedshorteditor=\count166
+\c@bookauthor=\count167
+\c@savedbookauthor=\count168
+\c@translator=\count169
+\c@savedtranslator=\count170
+\c@annotator=\count171
+\c@savedannotator=\count172
+\c@commentator=\count173
+\c@savedcommentator=\count174
+\c@introduction=\count175
+\c@savedintroduction=\count176
+\c@foreword=\count177
+\c@savedforeword=\count178
+\c@afterword=\count179
+\c@savedafterword=\count180
+\c@holder=\count181
+\c@savedholder=\count182
+\c@namea=\count183
+\c@savednamea=\count184
+\c@nameb=\count185
+\c@savednameb=\count186
+\c@namec=\count187
+\c@savednamec=\count188
+\c@institution=\count189
+\c@savedinstitution=\count190
+\c@language=\count191
+\c@savedlanguage=\count192
+\c@location=\count193
+\c@savedlocation=\count194
+\c@organization=\count195
+\c@savedorganization=\count196
+\c@origlocation=\count197
+\c@savedoriglocation=\count198
+\c@origpublisher=\count199
+\c@savedorigpublisher=\count200
+\c@pageref=\count201
+\c@savedpageref=\count202
+\c@publisher=\count203
+\c@savedpublisher=\count204
+\c@lista=\count205
+\c@savedlista=\count206
+\c@listb=\count207
+\c@savedlistb=\count208
+\c@listc=\count209
+\c@savedlistc=\count210
+\c@listd=\count211
+\c@savedlistd=\count212
+\c@liste=\count213
+\c@savedliste=\count214
+\c@listf=\count215
+\c@savedlistf=\count216
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -618,13 +686,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/opt/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 
-\c@textcitecount=\count213
-\c@textcitetotal=\count214
-\c@textcitemaxnames=\count215
-\c@biburlnumpenalty=\count216
-\c@biburlucpenalty=\count217
-\c@biburllcpenalty=\count218
-\c@smartand=\count219
+\c@textcitecount=\count217
+\c@textcitetotal=\count218
+\c@textcitemaxnames=\count219
+\c@biburlnumpenalty=\count220
+\c@biburlucpenalty=\count221
+\c@biburllcpenalty=\count222
+\c@smartand=\count223
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -636,8 +704,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/opt/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count220
-\c@bbx:relatedtotal=\count221
+\c@bbx:relatedcount=\count224
+\c@bbx:relatedtotal=\count225
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -668,82 +736,85 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/opt/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 )
-\@quotelevel=\count222
-\@quotereset=\count223
+\@quotelevel=\count226
+\@quotereset=\count227
  (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 34.
-(/opt/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: letterpaper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(108.405pt, 397.48499pt, 108.40501pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43pt, 72.27pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=397.48499pt
-* \textheight=650.43pt
-* \oddsidemargin=36.13501pt
-* \evensidemargin=36.13501pt
-* \topmargin=-37.0pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-\AtBeginShipoutBox=\box26
-Package hyperref Info: Link coloring OFF on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
+-- Lines per column: 58 (exact).
+\AtBeginShipoutBox=\box28
+Package hyperref Info: Link coloring OFF on input line 35.
 (/opt/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/opt/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count224
+\c@section@level=\count228
 )
-LaTeX Info: Redefining \ref on input line 34.
-LaTeX Info: Redefining \pageref on input line 34.
-LaTeX Info: Redefining \nameref on input line 34.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
 
 (./paper.out) (./paper.out)
 \@outlinefile=\write4
 \openout4 = `paper.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 34.
+LaTeX Info: Redefining \microtypecontext on input line 35.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -759,16 +830,16 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 (/opt/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count225
-\scratchdimen=\dimen131
-\scratchbox=\box27
-\nofMPsegments=\count226
-\nofMParguments=\count227
+\scratchcounter=\count229
+\scratchdimen=\dimen146
+\scratchbox=\box29
+\nofMPsegments=\count230
+\nofMParguments=\count231
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count228
-\MPscratchDim=\dimen132
-\MPnumerator=\count229
-\makeMPintoPDFobject=\count230
+\MPscratchCnt=\count232
+\MPscratchDim=\dimen147
+\MPnumerator=\count233
+\makeMPintoPDFobject=\count266
 \everyMPtoPDFconversion=\toks21
 ) (/opt/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -814,15 +885,22 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 34.
-Package biblatex Info: Reference segment=0 on input line 34.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 37.
- (/opt/texlive/2015/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+Package biblatex Info: Reference section=0 on input line 35.
+Package biblatex Info: Reference segment=0 on input line 35.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 38.
+ (/opt/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+(/opt/texlive/2015/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+LaTeX Font Info:    Try loading font information for U+msa on input line 88.
 
 (/opt/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -830,89 +908,91 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/opt/texlive/2015/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+LaTeX Font Info:    Try loading font information for U+msb on input line 88.
 
 (/opt/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (/opt/texlive/2015/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 37.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 37.
+) [1{/opt/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-(/opt/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 38.
- [1
 
-{/opt/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<figE.png, id=73, 218.2554pt x 145.9854pt>
+]
+Underfull \hbox (badness 2951) in paragraph at lines 149--159
+[]\T1/ptm/m/n/10 (+20) Our im-ple-men-ta-tion is based on An-drej Karpa-thy's
+ []
+
+<figE.png, id=68, 218.2554pt x 145.9854pt>
 File: figE.png Graphic file (type png)
  <use figE.png>
-Package pdftex.def Info: figE.png used on input line 219.
+Package pdftex.def Info: figE.png used on input line 221.
 (pdftex.def)             Requested size: 196.42802pt x 131.38564pt.
 
-<figH.png, id=75, 216.0873pt x 143.8173pt>
+<figH.png, id=70, 216.0873pt x 143.8173pt>
 File: figH.png Graphic file (type png)
  <use figH.png>
-Package pdftex.def Info: figH.png used on input line 220.
+Package pdftex.def Info: figH.png used on input line 222.
 (pdftex.def)             Requested size: 194.47676pt x 129.43436pt.
- [3 <./figE.png> <./figH.png>] <figFS.png, id=87, 290.5254pt x 182.1204pt>
+ [2 <./figE.png> <./figH.png>] <figFS.png, id=86, 290.5254pt x 182.1204pt>
 File: figFS.png Graphic file (type png)
  <use figFS.png>
-Package pdftex.def Info: figFS.png used on input line 269.
+Package pdftex.def Info: figFS.png used on input line 271.
 (pdftex.def)             Requested size: 261.47044pt x 163.90683pt.
 
-<figEHE.png, id=92, 290.5254pt x 182.1204pt>
+Overfull \hbox (9.47044pt too wide) in paragraph at lines 271--279
+ [][] 
+ []
+
+<figEHE.png, id=91, 290.5254pt x 182.1204pt>
 File: figEHE.png Graphic file (type png)
  <use figEHE.png>
-Package pdftex.def Info: figEHE.png used on input line 283.
+Package pdftex.def Info: figEHE.png used on input line 285.
 (pdftex.def)             Requested size: 261.47044pt x 163.90683pt.
- [4 <./figFS.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
-[5 <./figEHE.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
+
+Overfull \hbox (9.47044pt too wide) in paragraph at lines 285--286
+ [][] 
+ []
+
+[3 <./figFS.png> <./figEHE.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 323.
+ [4
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 323.
  (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 321.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 323.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 323.
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: 638E334B7E6847A7A472EA35A0BE99D0;661.
 Package logreq Info: Writing requests to 'paper.run.xml'.
 \openout1 = `paper.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 321.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 323.
  ) 
 Here is how much of TeX's memory you used:
- 12769 strings out of 493091
- 203186 string characters out of 6137640
- 423856 words of memory out of 5000000
- 15910 multiletter control sequences out of 15000+600000
- 44972 words of font info for 156 fonts, out of 8000000 for 9000
+ 13184 strings out of 493091
+ 213430 string characters out of 6137640
+ 434769 words of memory out of 5000000
+ 16336 multiletter control sequences out of 15000+600000
+ 121818 words of font info for 227 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,8n,48p,937b,972s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/opt/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/opt/texlive/2015/
-texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</opt/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/texlive/2015/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi7.pfb></opt/texlive/2015/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr10.pfb></opt/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr7.pfb></opt/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></opt/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7
-.pfb></opt/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></o
-pt/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/texlive/2015/
-texmf-dist/fonts/type1/urw/times/utmr8a.pfb></opt/texlive/2015/texmf-dist/fonts
-/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (5 pages, 200854 bytes).
+ 36i,8n,48p,937b,1010s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/opt/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/texlive/2015/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></opt/texlive/2015/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr7.pfb></opt/texlive/2015/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></opt/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb></opt/texlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
+/opt/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/texlive/201
+5/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></opt/texlive/2015/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></opt/texlive/2015/texmf-dist/fonts/type1/urw/ti
+mes/utmri8a.pfb>
+Output written on paper.pdf (4 pages, 193814 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 24677 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 27237 words of extra memory for PDF output out of 29859 (max. 10000000)
 

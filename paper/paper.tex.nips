@@ -1,7 +1,6 @@
-%\documentclass{article}
-\documentclass[journal]{IEEEtran}
+\documentclass{article}
 
-%\usepackage[final,nonatbib]{nips_2016}
+\usepackage[final,nonatbib]{nips_2016}
 
 
 \usepackage[utf8]{inputenc} % allow utf-8 input
@@ -115,7 +114,7 @@ hand under the constraint of minimizing the number of neurons with non-zero
 outgoing weights. We want to turn these ``soft'' structure changes into hard
 structural changes in the actual number of neurons and size of the weight
 matrix. To this end, we first specify a \textit{deletion threshold} $T_D$, such
-that any neuron for which the L1-norm of outgoing weights falls below this threshold is marked for
+that any neuron for which the L1-norm of outgoing weights fall below this threshold is marked for
 potential deletion. Then, we simply specify that at any given time, the network
 must only contain a fixed, small number $k$ of neurons below the deletion
 threshold. If the number of sub-threshold neurons exceeds $k$, then ``excess''
@@ -166,8 +165,8 @@ update (that is, at the end of each successive 40-char sequence).
 
 
 There are thus 5 additional parameters in our method: $k$, $T_D$,  $P_{add}$,
-$P_{del}$, and $A_{L1reg}$ (the strength of the L1-norm penalty 
-over the weights). In all simulations shown here, those were set to $k=1$,
+$P_{del}$, and $A_{L1reg}$ (the strength of the L1 regularization
+over the multipliers). In all simulations shown here, those were set to $k=1$,
 $T_D=0.05$,  $P_{add}=0.01$, $P_{del}=0.05$, and
 $A_{L1reg}=10^{-4}$. 
 
